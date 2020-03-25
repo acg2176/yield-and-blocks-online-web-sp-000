@@ -1,5 +1,5 @@
 def hello_t(array)
   array.each do |name|
-    name
+    puts "#{name}"
   end
 end
