@@ -1,3 +1,5 @@
 def hello_t(array)
-  # code here
+  array.each do |name|
+    name
+  end
 end
