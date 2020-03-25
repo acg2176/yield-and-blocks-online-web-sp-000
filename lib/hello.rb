@@ -1,7 +1,10 @@
 def hello_t(array)
-  array.each do |name|
-    puts "#{name}"
-  end
-end
+  i = 0
 
-hello_t(array){ |name| puts name.upcase }
+  while i < array.length
+    yield(array[i])
+    i = i + 1
+  end
+
+  array
+end
